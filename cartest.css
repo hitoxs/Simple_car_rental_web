@@ -1,0 +1,589 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: arial, tahoma;
+    list-style: none;
+  }
+  
+  .background_image{
+    background-image: url("cars/background.jpg");
+    background-repeat: repeat;
+  }
+  
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  /* head and nav */
+  
+  header {
+    height: 500px;
+  }
+  
+  .bg-img {
+  
+    background-image: url("cars/2.jpg");
+    min-height: 657px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .head1{
+    padding-right: 700px;
+    margin-top: 140px;
+    text-align: left;
+    color: #EEE;
+    position: absolute;
+    top: 50px;
+    left: 80px;
+    font-family: 'Aboreto', cursive;
+    
+    
+  }
+  .para1{
+    padding-right: 690px;
+    margin-top: 240px;
+    text-align: left;
+    color: #EEE;
+    position: absolute;
+    top: 50px;
+    left: 80px;
+    font-family: 'Raleway', sans-serif;
+  }
+  .button1{
+    position: absolute;
+    top: 50px;
+    left: 80px;
+    padding-right: 40px;
+    margin-top: 390px;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+  }
+  .button1:hover{
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    background-color: #000000;
+    box-shadow: rgb(255, 255, 255) 0 8px 15px;
+    transform: translateY(-2px);
+    font-family: 'Raleway', sans-serif;
+    
+  }
+  
+  
+  .search-form {
+    display: inline-block;
+    margin-left: 280px;
+    margin-top: 442px;
+  }
+  
+  .inputs[type="text"] {
+    padding: 15px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-size: 16px;
+    border-radius: 10px;
+    font-size: small;
+  }
+  
+  .buttonsearch[type="submit"] {
+    font-size: small;
+    font-weight: lighter;
+    position: absolute;
+    padding: 15px;
+    margin-top: -2px;
+    margin-left: 10px;
+    width: 180px;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+  }
+  .buttonsearch[type="submit"]:hover {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    background-color: #000000;
+    box-shadow: rgb(255, 255, 255) 0 8px 15px;
+    transform: translateY(-2px);
+    font-family: 'Raleway', sans-serif;
+  }
+
+
+  .php_para{
+    font-size: larger;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    margin-top: -20px;
+    margin-left: 250px;
+  }
+
+  .datanot{
+    font-weight: lighter;
+    font-size: larger;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    margin-top: -20px;
+    margin-left: 225px;
+  }
+  
+  nav {
+    height: 55px;
+    background-color: transparent;
+    overflow: hidden;
+  }
+  .fixed-nav {
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  .logo {
+    padding: 4px;
+    width: 80px;
+    height: 50px;
+    float: left;
+    width: auto;
+  }
+  .logo img {
+    height: 55px;
+  }
+  .list-item {
+    float: right;
+    margin-right: 25px;
+    margin-top: 10px;
+  }
+  .list-item li {
+    float: left;
+    padding: 5px 13px;
+    font-size: 18px;
+    border-radius: 3px;
+    transition: all .7s ease-in-out;
+  }
+  .list-item li a {
+    font-family: 'Aboreto', cursive;
+    color: #EEE;
+  }
+  .list-item li:hover {
+    background-color: #dfa32b;
+  }
+  
+  
+  
+  @media only screen and (max-width: 600px){
+    .head1{
+      text-align: center;
+      margin-top: 70px;
+      width: 1000px;
+      margin-left: 20px;
+    }
+    .para1{
+      text-align: center;
+      margin-top: 270px;
+      width: 1000px;
+      margin-left: 10px;
+    }
+    .button1{
+      margin-top: 490px;
+     margin-left: 70px;
+    }
+    .fixed-nav {
+      background-color: rgb(0, 0, 0);
+      position: fixed;
+    }
+    .logo img {
+      padding-left: 210px;
+    }
+  
+    .search-form {
+      display: inline-block;
+      margin-left: 50px;
+      margin-top: 600px;
+  
+    }
+  }
+  
+  
+  
+  /* end head and nav */
+  
+  /* Form cars */
+  
+  .images {
+    display: flex;
+    border-width: 3px 4px 3px 5px;
+    border-radius:95% 4% 92% 5%/4% 95% 6% 95%;
+  }
+  .isg{
+    transition: transform .2s; /* Animation */
+  }
+  .isg:hover{
+    transform: scale(1.4)
+  }
+  .image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin:15px;
+    background:#fff;
+    border: solid black;
+    border-color: black;
+    float:left; 
+  }
+  
+  img {
+    max-width: 100%;
+      max-height: 100%;
+    object-fit: cover;
+  }
+  .cartxt{
+    text-align: center;
+    z-index: 9999;
+    position: relative;
+    margin-top: 200px;
+  }
+  .head3{
+    font-family: 'Aboreto', cursive;
+  }
+  .head33{
+    font-family: 'Aboreto', cursive;
+    margin-left: -45px;
+  }
+  .detail{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+  }
+  .model{
+    display: inline-block;
+    margin-right: 10px;
+    word-spacing: 50px;
+  }
+  .image p {
+    font-weight: bold;
+    margin-top: 10px;
+    font-family: 'Yeseva One', cursive;
+  }
+  .image ul {
+    text-align: center;
+    list-style-type: none;
+    margin-top: 10px;
+    padding-left: 0;
+  }
+  
+  .button-57 {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #18181a;
+    color: #18181a;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 15px;
+    padding: 18px 40px 17px;
+    text-decoration: none;
+    cursor: pointer;
+    background: #fff;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    font-family: 'Raleway', sans-serif;
+  }
+  .button-57 span:first-child {
+    position: relative;
+    transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+    z-index: 10;
+  }
+  .button-57 span:last-child {
+    color: white;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+    z-index: 100;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translateY(225%) translateX(-50%);
+    height: 14px;
+    line-height: 13px;
+  }
+  .button-57:after {
+    content: "";
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    transform-origin: bottom center;
+    transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+    transform: skewY(9.3deg) scaleY(0);
+    z-index: 50;
+  }
+  .button-57:hover:after {
+    transform-origin: bottom center;
+    transform: skewY(9.3deg) scaleY(2);
+  }
+  .button-57:hover span:last-child {
+    transform: translateX(-50%) translateY(-100%);
+    opacity: 1;
+    transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+  }
+  .about-image {
+    background-image: url('cars/1.jpg');
+    background-size: cover;
+    height: 675px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .head2{
+    text-align: right;
+    color: #EEE;
+    position: absolute;
+   margin-left: 500px;
+   margin-bottom: 220px;
+   font-size: 50px;
+   font-family: 'Aboreto', cursive;
+  }
+  .para2{
+    color: #EEE;
+    position: absolute;
+   margin-left: 510px;
+   margin-bottom: 80px;
+   width: 500px;
+   font-family: 'Raleway', sans-serif;
+  }
+  .para3{ 
+    color: #EEE;
+    position: absolute;
+   margin-left: 510px;
+   margin-bottom: -160px;
+   width: 500px;
+   font-family: 'Raleway', sans-serif;
+  }
+  
+  @media only screen and (max-width: 600px){
+    .images{
+      display: list-item;
+    }
+    .button-57{
+      margin-bottom: 30px;
+    }
+    .head33{
+      margin-left: 5px;
+    }
+    .about-image {
+      margin-top: 2300px;
+    display: block;
+    }
+    .head2{
+      text-align: center;
+      margin-top: 220px;
+      width: 900px;
+      font-size: 250%;
+      margin-left: -210px;
+    }
+    .para2{
+      text-align: center;
+      margin-top: 280px;
+      width: 400px;
+      margin-left: 40px;
+    }
+    .para3{ 
+      text-align: center;
+      margin-top: 380px;
+      width: 400px;
+      margin-left: 40px;
+    }
+  }
+  /* end Form cars */
+  
+  /* form */
+  
+  @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+  
+  form { max-width:420px; margin:50px auto; }
+  
+  .feedback-input {
+    color:rgb(0, 0, 0);
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight:500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border:2px solid #000000;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width:100%;
+    box-sizing: border-box;
+    outline:0;
+  }
+  
+  .feedback-input:focus { border:2px solid #000000; }
+  
+  textarea {
+    height: 250px;
+    line-height: 150%;
+    resize:vertical;
+  }
+  
+  [type="submit"] {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    width: 100%;
+    background:#db1111;
+    border-radius:5px;
+    border:0;
+    cursor:pointer;
+    color:rgb(255, 255, 255);
+    font-size:24px;
+    padding-top:10px;
+    padding-bottom:10px;
+    transition: all 0.3s;
+    margin-top:-4px;
+    font-weight:700;
+  }
+  [type="submit"]:hover { background:#000000; }
+  
+  .head7{
+    text-align: center;
+    font-family: 'Aboreto', cursive;
+  }
+  
+  .image-container img {
+    display: inline-block;
+    width: 70px; /* Adjust as needed */
+    height: 70px; /* Adjust as needed */
+    margin: 0 50px 20px 0; /* Adjust as needed */
+    margin-left: 182px;
+    cursor: pointer;
+  }
+  .info{
+    text-align: center;
+  }
+  
+  .info p{
+    font-size: larger;
+    border: #000;
+  }
+  
+  @media only screen and (max-width: 600px){
+    .image-container{
+      padding-left: 25px;
+    }
+  }
+  /* end form */
+  
+  /* footer section */
+  
+  .footer{
+    background:#000;
+    padding:30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    }
+    
+    .footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:0.8em;
+    }
+    
+    .footer .row a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+    }
+    
+    .footer .row a:hover{
+    color:#fff;
+    }
+    
+    .footer .row ul{
+    width:100%;
+    }
+    
+    .footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+    .footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+    
+    @media (max-width:720px){
+    .footer{
+    text-align:left;
+    padding:5%;
+    }
+    .footer .row ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:center;
+    }
+    .footer .row a i{
+      
+    margin:0% 3%;
+    }
+    }
+  
+    /* footer section end  */
+  
+  
+    .left, .right {
+      float: left;
+      width: 20%; /* The width is 20%, by default */
+    }
+    
+    .main {
+      float: left;
+      width: 60%; /* The width is 60%, by default */
+    }
+    
+    /* Use a media query to add a breakpoint at 800px: */
+    @media screen and (max-width: 800px) {
+      .left, .main, .right {
+        width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+      }
+    }

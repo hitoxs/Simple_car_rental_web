@@ -1,0 +1,594 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: arial, tahoma;
+    list-style: none;
+  }
+  
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  .background_image{
+    background-image: url("cars/background.jpg");
+    background-repeat: repeat;
+  }
+  
+  /* header and nav */
+  
+  header {
+    height: 500px;
+  }
+  
+  nav {
+    height: 55px;
+    background-color: transparent;
+    overflow: hidden;
+  }
+  .fixed-nav {
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+  }
+  .logo {
+    margin-top: 10px;
+    float: left;
+  }
+  .logo img {
+    padding: 1px;
+    margin-left: 3px;
+    margin-top: -5px;
+    margin-bottom: 600px;
+    height: 40px;
+    width: 70px;
+  }
+  .list-item {
+    float: right;
+    margin-right: 25px;
+    margin-top: 10px;
+  }
+  .list-item li {
+    float: left;
+    padding: 5px 13px;
+    font-size: 18px;
+    border-radius: 3px;
+    transition: all .7s ease-in-out;
+  }
+  .list-item li a {
+    font-family: 'Aboreto', cursive;
+    color: #EEE;
+  }
+  .list-item li:hover {
+    background-color: #dfa32b;
+  }
+  
+  .head1{
+    padding-right: 700px;
+    margin-top: 40px;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 50px;
+    left: 80px;
+    font-family: 'Aboreto', cursive;
+    
+    
+  }
+  .para1{
+    padding-right: 690px;
+    margin-top: 80px;
+    text-align: left;
+    color: #dfa32b;
+    position: absolute;
+    top: 50px;
+    left: 80px;
+    font-family: 'Raleway', sans-serif;
+  }
+  .price{
+    padding-right: 750px;
+    margin-left: 20px;
+    margin-top: 470px;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 50px;
+    left: 80px;
+    font-family: 'Aboreto', cursive;
+  }
+  .button2{
+    position: absolute;
+    margin-left: 80px;
+    margin-top: 550px;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #000000;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+  }
+  .button2:hover{
+  
+    color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+    background-color: transparent;
+    box-shadow: rgb(0, 0, 0) 0 8px 15px;
+    transform: translateY(-2px);
+    font-family: 'Raleway', sans-serif;
+    
+  }
+
+  .icon1{
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    margin-top: 538px;
+    margin-left: 600px;
+  }
+  
+  .iconp{
+    position: absolute;
+    margin-top: 567px;
+    margin-left: 670px;
+    font-family: 'Aboreto', cursive;
+    font-weight: bold;
+  }
+  
+  .icon2{
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    margin-top: 534px;
+    margin-left: 827px;
+  }
+  
+  .iconp2{
+    position: absolute;
+    margin-top: 567px;
+    margin-left: 890px;
+    font-family: 'Aboreto', cursive;
+    font-weight: bold;
+  }
+  
+  .icon3{
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    margin-top: 535px;
+    margin-left: 1010px;
+  }
+  
+  .iconp3{
+    position: absolute;
+    margin-top: 567px;
+    margin-left: 1075px;
+    font-family: 'Aboreto', cursive;
+    font-weight: bold;
+  }
+  .icon4{
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    margin-top: 535px;
+    margin-left: 1135px;
+  }
+  
+  .iconp4{
+    position: absolute;
+    margin-top: 567px;
+    margin-left: 1200px;
+    font-family: 'Aboreto', cursive;
+    font-weight: bold;
+  }
+  
+  .bg-img {
+    background-image: url("cars/Class_c_berline/first.jpg");
+    min-height: 657px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  @media only screen and (max-width: 600px){
+    .head1{
+      text-align: center;
+      margin-top: 15px;
+      width: 1000px;
+      margin-left: 20px;
+    }
+    .para1{
+      text-align: center;
+      margin-top: 90px;
+      width: 1000px;
+      margin-left: 17px;
+    }
+    .button2{
+      margin-top: 560px;
+     margin-left: 20px;
+  }
+  .price{
+    margin-top: 460px;
+    margin-left: 0px;
+  }
+  .icon1{
+    margin-top: 450px;
+    margin-left: 260px;
+  }
+  
+  .iconp{
+    margin-top: 478px;
+    margin-left: 330px;
+    font-size: smaller;
+  
+  }
+  
+  .icon2{
+    margin-top: 490px;
+    margin-left: 255px;
+  }
+  
+  .iconp2{
+    margin-top: 525px;
+    margin-left: 330px;
+    font-size: smaller;
+  }
+  
+  .icon3{
+    margin-top: 533px;
+    margin-left: 252px;
+  }
+  
+  .iconp3{
+    margin-top: 570px;
+    margin-left: 330px;
+    font-size: smaller;
+  }
+  .icon4{
+    margin-top: 580px;
+    margin-left: 254px;
+  
+  }
+  .iconp4{
+    margin-top: 610px;
+    margin-left: 330px;
+    font-size: smaller;
+  }
+  
+  }
+  
+  /* header and nav */
+  
+  
+  
+  /* box images and bio */
+  
+  .images {
+    display: flex;
+    border-width: 3px 4px 3px 5px;
+    border-radius:95% 4% 92% 5%/4% 95% 6% 95%;
+  }
+  
+  .image {
+    display: flex;
+    flex-direction: column;
+    background:#fff;
+    padding-left: 60px;
+  }
+  
+  .images img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+     width: 300px;
+     height: 300px;
+    object-fit: cover;
+    border-radius: 150px;
+    box-shadow: rgba(255, 0, 0, 800) 0 0 50px;
+   border-collapse: collapse;
+  }
+  
+  .heads1{
+    font-family: 'Aboreto', cursive;
+    font-weight: 9000;
+    padding-left: 107px;
+  }
+  
+  .cartxt{
+    text-align: center;
+    z-index: 9999;
+    position: static;
+    margin-top: 200px;
+  }
+  
+  .head3{
+    margin-left: 0px;
+    font-family: 'Aboreto', cursive;
+  }
+  
+  .para555{
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+    position: static;
+    margin-left: 50px;
+  }
+  
+  .parap{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    padding-right: 85px;
+    padding-top: 10px;
+  }
+  
+  .parapp{
+    font-family: 'Raleway', sans-serif;
+    padding-top: 10px;
+    padding-right: 25px;
+    text-align: center;
+  }
+  
+  .headss{
+    font-family: 'Aboreto', cursive;
+    font-weight: 9000;
+    padding-left: 120px;
+  }
+  
+  
+  .model{
+    display: inline-block;
+    margin-right: 10px;
+    word-spacing: 50px;
+  }
+  
+  
+  .reser{
+    color: #EEE;
+    text-align: center;
+  }
+  
+  .reser h1{
+    padding-top: 50px;
+    font-family: 'Aboreto', cursive;
+  }
+  
+  
+  
+  .form-pic{
+    background-image: url("cars/social.jpg");
+    min-height: 657px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  @media only screen and (max-width: 600px){
+    .images{
+      display: list-item;
+      padding-left: 40px;
+    }
+    .parapp{
+      padding-right: 60px;
+    }
+    .headss{
+      margin-right: 500px;
+    }
+    .para555{
+      padding-right: 40px;
+    }
+  
+  }
+  
+  
+  
+  /* box images and bio */
+  
+
+  .aboutcar{
+    background-image: url("cars/Class_c_berline/third.jpg");
+    min-height: 657px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  /* form section */
+  
+  div.elem-group {
+    width: 29%;
+    display: inline-block;
+    margin-left: 3%;
+    margin-top: 20px;
+    color: #fff;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  
+  div.elem-group.inlined {
+    margin-top: 20px;
+    width: 29%;
+    display: inline-block;
+    margin-left: 3.0%;
+    color: #fff;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .elem-group1 {
+    margin-top: 15px;
+    width: 29%;
+    margin-left: 35.5%;
+    color: #fff;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .elem-group2 {
+    margin-top: 15px;
+    width: 29%;
+    margin-left: 35.5%;
+    color: #fff;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  
+  label {
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 10px;
+    font-size: 1.25em;
+  }
+  
+  input, select, textarea {
+    border-radius: 2px;
+    border: 2px solid #777;
+    box-sizing: border-box;
+    font-size: 1.25em;
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .option{
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  div.elem-group.inlined input {
+    width: 95%;
+    display: inline-block;
+  }
+  
+  textarea {
+    height: 150px;
+  }
+  button{
+    margin-top: 20px;
+    margin-left: 620px;
+    height: 50px;
+    color: white;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    position: absolute;
+  
+  }
+  
+  button:hover {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    background-color: #000000;
+    box-shadow: rgb(255, 255, 255) 0 8px 15px;
+    transform: translateY(-2px);
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  /* form section */
+  
+  
+  
+  /* footer section */
+  
+  .footer{
+    background:rgb(0, 0, 0);
+    padding:80px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    }
+    
+    .footer .row{
+      width:100%;
+      margin:1% 0%;
+      padding:0.6% 0%;
+      color:gray;
+      font-size:0.8em;
+      }
+    
+    .footer .row a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+    }
+    
+    .footer .row a:hover{
+    color:#fff;
+    }
+    
+    .footer .row ul{
+    width:100%;
+    }
+    
+    .footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+    .footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+    @media (max-width:720px){
+      .footer{
+      text-align:left;
+      padding:5%;
+      }
+      .footer .row ul li{
+      display:block;
+      margin:10px 0px;
+      text-align:center;
+      }
+      .footer .row a i{
+      margin:0% 3%;
+      }
+      }
+    /* end footer section */
+  
+    
+    .left, .right {
+      float: left;
+      width: 20%; /* The width is 20%, by default */
+    }
+    
+    .main {
+      float: left;
+      width: 60%; /* The width is 60%, by default */
+    }
+    
+    /* Use a media query to add a breakpoint at 800px: */
+    @media screen and (max-width: 800px) {
+      .left, .main, .right {
+        width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+      }
+    }
